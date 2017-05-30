@@ -1,39 +1,59 @@
+/*text class want indent of all the paragraphs*/
 .text {
-  text-indent: 50px;
+  text-indent: 50px; /*indent of 50 pixels*/
 }
 
+/*format all images in the DIVS to the same size*/
 div img {
-  height: 100px;
-  float: left;
+  height: 100px; /*Set height of images inside all divs to 100px*/
+  float: left; /*float the images to the left into one block*/
 }
+
+/*Set all h1 elements inside of the divs to center*/
 div h1 {
   float: center;
 }
+
+/*Set header class images alignment*/
 .header img {
   allign: left;
 }
+
+/*Set header class p's font size and position*/
 .header p {
   font-size: 12px;
   float: center;
 }
+
+/*Job images class to specific height outside the effects of the div img above*/
 .jobImgs {
   height: 50px;
 }
+
+/*position and height of the divs set here, float them left so they are next to eachother*/
 .employmentHistory {
   float: left;
   height: 300px;
 }
+
+/*set position and height of the class*/
 .skillsLearned {
   float: left;
   height: 300px;
 }
+
+/*set position and height of the class*/
 .education {
   float: left;
   height: 300px;
 }
+
+/*Clear the positon of .bio class to it appears below the other divs above it */
 .bio {
   clear: both;
 }
+
+/*to set background color*/
 body {
-    background: linear-gradient(to bottom right, red, yellow); /* Standard syntax (must be last) */
+    background: linear-gradient(to bottom right, red, yellow); /*Gradient from red to yellow from top left corner to the bottom right*/
 }

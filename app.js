@@ -1,5 +1,5 @@
 'use strict';
-var i = false;
+var i = false; //to set a bool value for later user in loops
 
 var player = prompt('Hello player, we are going to play a game so you can learn a little bit about James, before we start we need to know who is playing. What is your name?');
 
