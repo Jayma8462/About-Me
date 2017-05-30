@@ -1,14 +1,39 @@
-h1 {
-  background-color: blue;
+.text {
+  text-indent: 50px;
 }
-p {
-  border: 5px solid red;
-  border-left: none;
-  border-right: none;
+
+div img {
+  height: 100px;
+  float: left;
 }
-.page-content {
-  background-color: white;
+div h1 {
+  float: center;
 }
-#unique-p-tag {
-  text-align: center;
+.header img {
+  allign: left;
+}
+.header p {
+  font-size: 12px;
+  float: center;
+}
+.jobImgs {
+  height: 50px;
+}
+.employmentHistory {
+  float: left;
+  height: 300px;
+}
+.skillsLearned {
+  float: left;
+  height: 300px;
+}
+.education {
+  float: left;
+  height: 300px;
+}
+.bio {
+  clear: both;
+}
+body {
+    background: linear-gradient(to bottom right, red, yellow); /* Standard syntax (must be last) */
 }
