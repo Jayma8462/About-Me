@@ -1,5 +1,6 @@
 'use strict';
 var i = false; //to set a bool value for later user in loops
+var count = 0;
 
 var player = prompt('Hello player, we are going to play a game so you can learn a little bit about James, before we start we need to know who is playing. What is your name?');
 
@@ -13,17 +14,35 @@ if (startGame === true) {
   alert('Hit ok when you are ready to start.');
 }
 
-var jobBackground = confirm('Does James work in computers currently?');
+var jobBackground.isUpper() = prompt('Does James work in computers currently?');
+while (i!== true){}
+  switch (jobBackground){
+    case 'YES': jobBackground = 'Y'; i = true; break;
+    case 'NO': jobBackground = 'N'; i = true; break;
+    case 'Y': jobBackground = 'Y'; i = true; break;
+    case 'N': jobBackground = 'N'; i = true; break;
+    default: "This is not a selection you can make, please try again";
+  }
+}
+i = false;
 
-if (jobBackground === true) {
+if (jobBackground === 'Y') {
   alert('Good job, James has been working in IT for 15 years.');
 } else {
   alert('Wrong, no cake for you');
 }
 
-var colorProblem = confirm('Does James have problems seeing the color green?');
+while (i !== true){
+  if (count < 1)
+    var colorProblem.toUpper() = prompt('Does James have problems seeing the color green?');
+    count = colorProblem.length();
+  }
+  count = 0;
+  i = true;
+}
 
-if (colorProblem == true) {
+i = false;
+if (colorProblem == 'Y') {
   alert('That is wrong, James can not see most shades of red');
 } else {
   alert('Correct, Good Job. Points for you.');
