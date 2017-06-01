@@ -13,43 +13,48 @@ if (startGame === true) {
 } else {
   alert('Hit ok when you are ready to start.');
 }
-
-var jobBackground.isUpper() = prompt('Does James work in computers currently?');
-while (i!== true){}
-  switch (jobBackground){
+var jobBackground = prompt('Does James work in computers currently?').toUpperCase();
+console.log("Users input for computer question is " + jobBackground);
+while (i!== true){
+  switch(jobBackground){
     case 'YES': jobBackground = 'Y'; i = true; break;
     case 'NO': jobBackground = 'N'; i = true; break;
     case 'Y': jobBackground = 'Y'; i = true; break;
     case 'N': jobBackground = 'N'; i = true; break;
-    default: "This is not a selection you can make, please try again";
+    default: alert("This is not a selection you can make, please try again");
   }
 }
-i = false;
 
 if (jobBackground === 'Y') {
   alert('Good job, James has been working in IT for 15 years.');
+  i = false;
 } else {
   alert('Wrong, no cake for you');
+  i = false;
 }
 
-while (i !== true){
-  if (count < 1)
-    var colorProblem.toUpper() = prompt('Does James have problems seeing the color green?');
-    count = colorProblem.length();
+while (i!== true){
+  var colorProblem = prompt('Does James have problems seeing the color green?').toUpperCase();
+  console.log("Users input for color question is " + colorProblem);
+  switch(colorProblem){
+    case 'YES': colorProblem = 'Y'; i = true; break;
+    case 'NO': colorProblem = 'N'; i = true; break;
+    case 'Y': colorProblem = 'Y'; i = true; break;
+    case 'N': colorProblem = 'N'; i = true; break;
+    default: alert("This is not a selection you can make, please try again");
   }
-  count = 0;
-  i = true;
 }
 
-i = false;
 if (colorProblem == 'Y') {
   alert('That is wrong, James can not see most shades of red');
+  i = false;
 } else {
   alert('Correct, Good Job. Points for you.');
+  i = false;
 }
 
 while (i !== true){
-  var kindOfPets = prompt('Is James a cat or dog person?'.toLowerCase());
+  var kindOfPets = prompt('Is James a cat or dog person?').toLowerCase();
   console.log('Users animal entry is ' + kindOfPets);
   switch(kindOfPets){
   case 'cat':
@@ -63,10 +68,21 @@ while (i !== true){
   default: alert('That was not a selection you can make, try again');
   }
 }
+i = false;
 
-var favSport = confirm('Does James like football?');
-
-if (favSport === true){
+var favSport = confirm('Does James like football?').toUpperCase();
+console.log("Users input for football question is " + favSport)
+while (i!== true){
+  switch (favSport){
+    case 'YES': favSport = 'Y'; i = true; break;
+    case 'NO': favSport = 'N'; i = true; break;
+    case 'Y': favSport= 'Y'; i = true; break;
+    case 'N': favSport = 'N'; i = true; break;
+    default: alert("This is not a selection you can make, please try again");
+  }
+}
+i = false;
+if (favSport === 'Y'){
   alert('I dont really like football, but i watch the superbowl ... for the commercials only.');
 } else {
   alert('You are correct, i am not a fan of football but i do love Paintball and Disk Golf');
