@@ -13,9 +13,10 @@ if (startGame === true) {
 } else {
   alert('Hit ok when you are ready to start.');
 }
-var jobBackground = prompt('Does James work in computers currently?').toUpperCase();
-console.log("Users input for computer question is " + jobBackground);
+
 while (i!== true){
+  var jobBackground = prompt('(Y/N)Does James work in computers currently?').toUpperCase();
+  console.log("Users input for computer question is " + jobBackground);
   switch(jobBackground){
     case 'YES': jobBackground = 'Y'; i = true; break;
     case 'NO': jobBackground = 'N'; i = true; break;
@@ -34,7 +35,7 @@ if (jobBackground === 'Y') {
 }
 
 while (i!== true){
-  var colorProblem = prompt('Does James have problems seeing the color green?').toUpperCase();
+  var colorProblem = prompt('(Y/N)Does James have problems seeing the color green?').toUpperCase();
   console.log("Users input for color question is " + colorProblem);
   switch(colorProblem){
     case 'YES': colorProblem = 'Y'; i = true; break;
@@ -70,9 +71,9 @@ while (i !== true){
 }
 i = false;
 
-var favSport = confirm('Does James like football?').toUpperCase();
-console.log("Users input for football question is " + favSport)
 while (i!== true){
+  var favSport = prompt('(Y/N)Does James like football?').toUpperCase();
+  console.log("Users input for football question is " + favSport)
   switch (favSport){
     case 'YES': favSport = 'Y'; i = true; break;
     case 'NO': favSport = 'N'; i = true; break;
@@ -88,8 +89,17 @@ if (favSport === 'Y'){
   alert('You are correct, i am not a fan of football but i do love Paintball and Disk Golf');
 }
 
-var favActivity = confirm('Does James like the outdoors?');
-
+while (i!== true){
+  var favActivity = prompt('(Y/N)Does James like the outdoors?');
+  console.log("Users input for football question is " + favSport);
+  switch (favSport){
+    case 'YES': favSport = 'Y'; i = true; break;
+    case 'NO': favSport = 'N'; i = true; break;
+    case 'Y': favSport= 'Y'; i = true; break;
+    case 'N': favSport = 'N'; i = true; break;
+    default: alert("This is not a selection you can make, please try again");
+  }
+}
 if (favActivity === true){
   alert('Yes I do love the outdoors, i go camping and snoboarding every chance i get.');
 } else {
