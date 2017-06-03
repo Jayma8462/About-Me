@@ -1,14 +1,97 @@
-<DOCTYPE html>
-  <html>
-  <head>
-    <title>About Me</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+<DOCTYPE html> <!--Declaring html as the type-->
+  <html><!--Declared html tag-->
+  <head><!--Head of the doc-->
+    <title>About Me</title><!--Title of Page-->
+    <link rel="stylesheet" type="text/css" href="style.css" /> <!--Linking css-->
   </head>
-  <body>
-    <script src="app.js"></script>
-    <h1>Welcome to James' About Me</h1>
-    <p class = "page-content">Here is some information about me</p>
-    <p class = "page-content">Here is some more information about me</p>
-    <p class = "page-content" id="unique-p-tag">Here is some more crazy information about me</p>
+  <body><!--Body of page-->
+    <script src="app.js"></script><!--Linking Javascript-->
+    <h1>Welcome to James' About Me</h1><!--Top title on page-->
+  <div class="header"><!--Declatation of header div for styleing later-->
+    <img src="Photos/James.jpg"><h1>James Bio</h1><!--Image of James-->
+    <p>Location: Bremerton, Wa </br><!--Basic BIO info and line break-->
+    Hobbies: Disk Golf, Snow Boarding, Paintball, Mechanic, Construction, Cooking and just helping others.</br>
+    Current Employment: Sharepoint Developer, Tier II Specialist</br></p>
+  </div>
+  <div class="employmentHistory"><!--Start of Employment history div-->
+      <p>Employment History:</br><!--Title of Employment History-->
+      <ul><!--List under Employment History-->
+        <li>NMCI Field Service Agent IT Services (2 years)</li>
+        <li>Lowes Freight Unloader (6 months)</li>
+        <li>Creytek Help Desk Technician (2 years)</li>
+        <li>Kitsap Networking Server Technician (6 months)</li>
+        <li>General Construction (4 years)</li>
+        <li>Navy Exchange Warehouse associate (6 months)</li>
+        <li>Marine Corps (5 years)</li>
+      </ul></br>
+      <img src="Photos/Marine Corps.gif" class="jobImgs"><!--Marine Corps Logo under employmentHistory div-->
+      <img src="Photos/KNS.gif" class="jobImgs"><!--Kitsap Networking Services Logo under employmentHistory div-->
+      <img src="Photos/Lowes.gif" class="jobImgs"><!--Lowes Logo under employmentHistory div-->
+      <img src="Photos/NEX.gif" class="jobImgs"><!--Navy Exchange Logo under employmentHistory div-->
+      <img src="Photos/NMCI_Square.gif" class="jobImgs"><!--NMCI Logo under employmentHistory div-->
+  </div>
+  <div class="Education"><!--Start of Education div-->
+    <p>Education</p><!--Title of education div-->
+    <ul><!--List for education dic-->
+      <li>Bremerton High School (General Education)</li>
+      <li>Westwood College (Game Engine Development)</li>
+      <li>Olympic College (Front End Development)</li>
+      <li>Marine Corps Server Administration (Server Administrator)</li>
+      <li>Marine Corps Basic Elevcctronics</li>
+    </ul>
+  </div>
+  <div class="skillsLearned"><!--Start of Skills Div-->
+      <p>Skills Learned from History:</br></p><!--Title for list-->
+      <ul>
+        <li>Cisco Networking**</li>
+        <li>Windows Operating Systems (Workstation / Server)***</li>
+        <li>Macintosh Operating Systems (Workstation / Server)**</li>
+        <li>Unix Systems (Workstation / Server)**</li>
+        <li>Construction (Plumbing / Framing / Insulation / Electrical / Roofing / Concrete)**</li>
+        <li>Scripting (Html, C, C++, C#, Python, Ruby, Java, Javascript, IOS)*</li>
+      </ul>
+      <h6>
+      * - Entry Level</br><!--info on for div-->
+      ** - Advanced Level</br>
+      *** - Master Level</br>
+      </h6>
+      <img src="Photos/apple.gif" class="jobImgs"><!--apple logo for Skills div-->
+      <img src="Photos/cisco.gif" class="jobImgs"><!--cisco logo for Skills div-->
+      <img src="Photos/construction.gif" class="jobImgs"><!--construction logo for Skills div-->
+      <img src="Photos/unix.gif" class="jobImgs"><!--unix logo for Skills div-->
+      <img src="Photos/Windows-10-logo.gif" class="jobImgs"><!--Windows 10 logo for Skills div-->
+    </p>
+  </div>
+  <div class="bio"><!--Basic div declaration for text element-->
+    <h2>A Little About Myself</h2><!--A title for the div-->
+    <p class="text">I grew up as a navy kid with my father serving 20+ years. My family of 9 people (7 kids), eventually settled in Bremerton </br><!--class for p to design-->
+    after my father retired. Due to injury I learned my work ethic from my mother who worked hard to provide what all of us needed.</br>
+    Most of the skills I learned through life was from my mother and she is a very good teacher. Watching my father growing up it was installed</br>
+    into me early that I needed to serve my country so after I graduated High School I joined the Marine Corps instead of following my fathers</br>
+    footsteps and joining the Navy.</p>
+    <p class="text">During my time in the Marine Corps it was difficult to gain a foothold and find my place, when I did find my place I was promoted to E-4 while</br>
+    I was still in school for Windows Server Administrator. When I hit my unit we deployed fairly quickly where I worked with many high ranking</br>
+    officers and had to learn to be nice to users that I worked with on a daily basis. After getting various job offers through the years I had</br>
+    jumped around many different jobs learning many new skills and I found interest in many different things.</p>
+    <p class="text">Currently I work as a Sharepoint Developer where I build small scripts to fix settings and push other security patches to systems</br>
+    that did not update appropriately. Simple scripting kiddy unfortunately. In the last few years I have been trying many new things, for example I decided</br>
+    to learn to snowboard and picked up cooking. I have many animals to include 2 cats and a dog that I adopted a few years ago. I love animals because I</br>
+    spent a few years on a farm when I grew up to help my Great Grandmother when she was unable to move as easily. I enjoy Paintball, I am out on the</br>
+    field almost every weekend when I am not out playing some disk golf. I enjoy paintball because there are many new players and I love teaching them</br>
+    what I know about the game. Specially they get bragging rights with their friends when they eliminate them.</p>
+    <p class="text">From the many years the things that I enjoy the most is learning something new. As of late I have focused my efforts into coding</br>
+    where I picked up a good number of languages, most of them are entry level, but I enjoy it for the ever changing world. There is always someone</br>
+    who has come out with a new idea, a better one and I love to learn the new concepts so I can build my own projects. I learned so many languages</br>
+    based out of need for the many projects over the years. Most of the projects were things I needed to complete for people or for myself but ultimately</br>
+    I found it outright fun, creating something from a blank canvas. I look forward to learning more in the future and hopefully I will learn something new</br>
+    that I can apply to my future endeavors.</p>
+    <p class="text">Lastly, I do not like sports although I was part of the Wrestling, Swimming, Soccer and Basketball teams in High School.</br>
+    I only watch the Superbowl or the World Cup for the awesome commercials. But I do quite a bit of Photography both action and portrait, I am </br>
+    pretty good at capturing people at the exact moment to show what they are feeling naturally. I dont like staged photos like in a studio, I am good at</br>
+    getting great photos of people when they are showing the emotions of the games I.E. Sad at a bad play, Excited during awesome plays and many others.</br>
+    Another fun fact about me that I should learn you with is that I also know how to play 7 different instruments. I learned to love good music because my mother</br>
+    played piano every day of my young life and I wanted to learn so I can enjoy the music too.</p>
+  </div>
+
   </body>
   </html>
