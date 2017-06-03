@@ -6,6 +6,7 @@ var responseToQuestions = ['James has been working in computers for 15 years', '
 var listOfUserAnswers = ['Y', 'N', 'DOG', 'N', 'Y'];
 
 var player = prompt('Hello player, we are going to play a game so you can learn a little bit about James, before we start we need to know who is playing. What is your name?');
+prompt("We are going to play a little game so we can learn a bit more about James before we get to the technical stuff. I am going to ask you a few questions that you will guess the answers to and get You will be shown your score at the end of the quiz. Each question is either a Y, N guessing a number or other cool things about James. Good Luck.")
 console.log('The player\'s name is ' + player);
 var startGame = confirm('Welcome, ' + player + ' it is nice to have you. Are you ready to start the game?');
 
