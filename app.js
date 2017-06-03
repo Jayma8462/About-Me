@@ -1,4 +1,5 @@
 'use strict';
+//somthing
 var count = 0;
 var userScore = 5;
 var answer;
@@ -8,40 +9,50 @@ var responseToQuestions = ['James has been working in computers for 15 years', '
 var listOfUserAnswers = ['Y', 'N', 'DOG', 'N', 'Y', 13];
 
 var player = prompt('Hello player, we are going to play a game so you can learn a little bit about James, before we start we need to know who is playing. What is your name?');
-alert("We are going to play a little game so we can learn a bit more about James before we get to the technical stuff. I am going to ask you a few questions that you will guess the answers to and get You will be shown your score at the end of the quiz. Each question is either a Y, N guessing a number or other cool things about James. Good Luck.")
+prompt('We are going to play a little game so we can learn a bit more about James before we get to the technical stuff. I am going to ask you a few questions that you will guess the answers to and get You will be shown your score at the end of the quiz. Each question is either a Y, N guessing a number or other cool things about James. Good Luck.')
 console.log('The player\'s name is ' + player);
 
 var startGame = confirm('Welcome, ' + player + ' it is nice to have you. Are you ready to start the game?');
-debugger;
-for (var i = 0; i <= 4; i++){
-  while (control !== true){
-    answer = prompt(listOfQuestions[i]).toUpperCase();
-      if (answer !== listOfUserAnswers[i]){
-        alert("That is not correct");
-        userScore--;
-      } else {
-        alert("Good Job, that is correct! " + responseToQuestions[i]);
-        control = true;
-      }
-    console.log("The answer to quesiton " + listOfQuestions[i] + " " + listOfUserAnswers[i]);
-  }
-}
-/*for (var i = 5; i <= 6; i++){
-  answer = prompt(listOfQuestions[i]);
-  if (answer < listOfUserAnswers[i]){
-    alert("Too low, try again!");
-  }else if (answer > listOfUserAnswers[i]){
-    alert("Too High, try again");
-  }else {
-    alert("Correct, " + responseToQuestions[i]);
-  }
-}*/
 
-if (i = 5){
-  userScore *= 20;
-  alert("You scored " + userScore + "%");
-}
+userQuestions();
+moreUserQuestions();
+userScore();
 
 alert('Now that we are done with the fun stuff, lets get to the Professional side. When you art ready hit ok to go to the website to learn more about me.');
 
 //Test comment
+function userQuestions(){
+  for (var i = 0; i <= 4; i++){
+
+    answer = prompt(listOfQuestions[i]).toUpperCase();
+    if (answer !== listOfUserAnswers[i]){
+      alert('That is not correct');
+      userScore--;
+    } else {
+      alert('Good Job, that is correct! ' + responseToQuestions[i]);
+      control = true;
+    }
+    console.log('The answer to quesiton ' + listOfQuestions[i] + '' + listOfUserAnswers[i]);
+  }
+};
+function moreUserQuestions(){
+  for (var i = 5; i <= 6; i++){
+    answer = prompt(listOfQuestions[i]);
+    if (answer < listOfUserAnswers[i]){
+      alert('Too low, try again!');
+    }else if (answer > listOfUserAnswers[i]){
+      alert('Too High, try again');
+    }else {
+      alert('Correct, ' + responseToQuestions[i]);
+    }
+  }
+
+
+};
+function userScore(){
+  if (i = 5){
+    userScore *= 20;
+    alert('You scored ' + userScore + '%');
+  }
+
+};
