@@ -3,7 +3,7 @@
 var count = 0;
 var userScore = 5;
 var answer;
-var control = false;
+//var control = false;
 var listOfQuestions = ['(Y/N)Does James work in computers currently?', '(Y/N)Does James have problems seeing the color green?', 'Is James a cat or dog person?', '(Y/N)Does James like football?', '(Y/N)Does James like the outdoors?', 'Guess my favorite number'];
 var responseToQuestions = ['James has been working in computers for 15 years', 'James has a problem seeing most shades of red, but he can still see pinks and purples. Interesting that he didnt loose mixing the color red with another color!', 'I actually have 2 cats names Courage and Nour, My dogs name is pumpkin', 'I only watch the Superbowl for the commercials, its like going to the movie theater only for the trailers', 'James loves the outdoors, he would rather be on the mountain camping or boarding then at home.', 'My favorite number is 13, how unlucky is that.'];
 var listOfUserAnswers = ['Y', 'N', 'DOG', 'N', 'Y', 13];
@@ -23,6 +23,7 @@ alert('Now that we are done with the fun stuff, lets get to the Professional sid
 //Test comment
 function userQuestions(){
   for (var i = 0; i <= 4; i++){
+
     answer = prompt(listOfQuestions[i]).toUpperCase();
     if (answer !== listOfUserAnswers[i]){
       alert('That is not correct');
@@ -33,7 +34,6 @@ function userQuestions(){
     }
     console.log('The answer to quesiton ' + listOfQuestions[i] + '' + listOfUserAnswers[i]);
   }
-  control = false;
 };
 function moreUserQuestions(){
   for (var i = 5; i <= 6; i++){
@@ -46,6 +46,7 @@ function moreUserQuestions(){
       alert('Correct, ' + responseToQuestions[i]);
     }
   }
+
 
 };
 function userScore(){
