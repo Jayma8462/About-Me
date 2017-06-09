@@ -6,7 +6,11 @@ body {
   margin-right: auto;
   margin-bottom: 0px;
   margin-top: 0px;
-  width: 960px;
+  width: 950px;
+  height: auto;
+  background-image:url("Photos/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 img {
   display: inline-block;
@@ -17,11 +21,19 @@ img {
   width: full;
   margin:0px;
   background-color: black;
-}
-#navBarText {
-  font-family: sans-serif;
-  margin-top: auto;
   color: white;
-  text-align: center;
-  font-size: 40px;
+}
+#navbar div {
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+  font-style: sans-sarif;
+  font-size: 20px;
+}
+a {
+  color: orange;
+}
+a:hover {
+  color: red;
 }
